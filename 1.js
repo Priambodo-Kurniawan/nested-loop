@@ -15,18 +15,43 @@ algoritma
 3. sisanya tidak usah diubah
 */
 
-var output = ''
-var input = 'his is javascript';
-
-for (var i = 0; i < input.length; i++) {
-  // console.log(input[i])
-  if (i === 0) {
-    output += input[i].toUpperCase() 
-  } else if (input[i - 1] === ' ') {
-    output += input[i].toUpperCase() 
-  } else {
+let input = "this is javascript"
+let output = ""
+for (let i = 0; i < input.length; i++) {
+  let charInput = input[i]
+  if(i === 0 || input[i-1] === " " ) {
+    output += charInput.toUpperCase()
+  }else {
     output += input[i]
   }
 }
+console.log(output)
 
-console.log(output) // hasil dari program kita
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var output = ''
+// var input = 'his is javascript';
+
+// for (var i = 0; i < input.length; i++) {
+//   // console.log(input[i])
+//   if (i === 0) {
+//     output += input[i].toUpperCase() 
+//   } else if (input[i - 1] === ' ') {
+//     output += input[i].toUpperCase() 
+//   } else {
+//     output += input[i]
+//   }
+// }
+
+// console.log(output) // hasil dari program kita
